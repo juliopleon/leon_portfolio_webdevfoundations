@@ -1,19 +1,28 @@
-header {
-    display: flex;
-    flex-direction: column;
-}
+
 
 h1 {
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 3rem;
-    padding: 5px;
-    margin: 0;
+    padding: 15px;
+    padding-top: 20px;
+    margin-bottom: 0;
 
+}
+
+h2 {
+    padding-left: 10px;
+    margin-bottom: 0;
 }
 
 a {
     text-decoration: none;
+}
+
+hr {
+    height: 2px;
+    background-color: black;
+    border: none;
 }
 
 .date {
@@ -53,4 +62,65 @@ nav ul {
     list-style-type: none;
     justify-content: center;
     margin-bottom: 0;
+}
+
+caption {
+    font-size: 1.1em;
+    font-weight: lighter;
+    margin-bottom: 25px;
+    caption-side: top;
+}
+
+table {
+    width: 100%;
+    background-color: white;
+    border-collapse: collapse;
+    
+}
+
+th, td {
+    text-align: left;
+    padding-left: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+tr {
+    border-bottom: 1px solid #dddd;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+article {
+    width: 100%;
+}
+
+.experience {
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer {
+    margin-top: 40px;
+    padding: 20px;
+    border-top: 1px solid;
+    text-align: center;
+    font-weight: lighter;
+
 }
