@@ -8,9 +8,11 @@
 </head>
 <body>
     <header>
+        <script>const today = new Date()</script>
+        <script>const dateString = today.toLocaleDateString()</script>
         <h1>Julio Leon</h1>
         <span>Software Engineer</span>
-        <div class="date">JS Date</div>
+        <div id="current-date" getElementById="" innerHTML="">${date}</div>
         <ul>
             <li><em>Boise, Idaho 83709 |&nbsp;</em></li>
             <li><address>julioleon.eng@gmail.com |&nbsp;</address></li>
@@ -67,50 +69,46 @@
             <h2>Experience</h2>
             <hr>
             <article>
-                <h3>Software Engineer,</h3>
-                <strong>BKA Express LLC -</strong>
-                <span>Boise, ID Hybrid</span>
-                <em class="static-date">March 2024 - February 2025</em>
-                
+                <div class="job-header">
+                    <h3>Software Engineer, <span class="company">BKA Express</span> - <em>Boise, ID Hybrid</em></h3>
+                    <span class="static-date">March 2024 – February 2025</span>
+                </div>
                 <ul>
-                    <li><p>Optimized IoT data processing designing the architecture an AWS IoT Core pipeline with Python Lambda functions, reducing latency by 40% and cutting S3 storage cost by 25% by implementing AWS smart tiering polices.</p></li>
-                    <li><p>Developed a real-time dashboard using JavaScript, React.js, and Next.js that visualized fleet telemetry for 20+ vehicles, improving operational decision-making speed by 35%</p></li>
+                    <li>Optimized IoT data processing designing the architecture an AWS IoT Core pipeline with Python Lambda functions, reducing latency by 40% and cutting S3 storage cost by 25% by implementing AWS smart tiering polices.</li>
+                    <li>Developed a real-time dashboard using JavaScript, React.js, and Next.js that visualized fleet telemetry for 20+ vehicles, improving operational decision-making speed by 35%.</li>
                 </ul>
             </article>
             
             <article>
-                <h3>Freelance Developer,</h3>
-                <p>
-                    <strong>Self Employed -</strong>
-                    <span>Boise, ID Remote</span>
-                    <em class="static-date">June 2023 - March 2024</em>
-                </p>
+                <div class="job-header">
+                    <h3>Freelance Developer, <span class="company">Self Employed</span> - <em>Boise, ID Remote</em></h3>
+                    <span class="static-date">June 2023 - March 2024</span>
+                </div>
                 <ul>
-                    <li>description of daily job operations</li>
-                    <li>description of daily job operations</li>
+                    <li>Developed Javascript, React.js, and TailwindCSS Web Applications for local or online businesses for 40% quicker response times.</li>
+                    <li>Developed Back-end using Node.js/MySQL for Database and Server Management.</li>
                 </ul>
             </article>
-            
             <article>
-                <h3>Application Tech Support,</h3>
-                <p>
-                    <strong>Apple -</strong>
-                    <span>Boise, ID</span>
-                    <em class="static-date">September 2018 - November 2022</em>
-                </p>
+                <div class="job-header">
+                    <h3>Application Tech Support, <span class="company">Apple</span> - <em>Boise, ID</em></h3>
+                    <span class="static-date">September 2018 - November 2022</span>
+                </div>
                 <ul>
-                    <li>description of daily job operations</li>
-                    <li>description of daily job operations</li>
+                    <li>Provided Technical Support for Apple's creative applications (Numbers, KeyNote, Pages, iMovie, Photos, and GarageBand), resolving user issues with 97% satisfaction rate.</li>
+                    <li>Created troubleshooting guides for GarageBand and iMovie, cutting resolution time by 50%.</li>
                 </ul>
             </article>
             
         </section>
-        <section class="projects">
+        <section>
             <h2>Projects</h2>
             <hr>
             <article>
-                <h3>Keeper - Full Stack Application</h3>
-                <strong>February 2024 - May 2024</strong>
+                 <div class="project-header">
+                    <h3>Keeper - Full Stack Application</h3>
+                    <span class="static-date">February 2025 - April 2025</span>
+                </div>
                 <ul>
                     <li>Developed secure authentication and CRUD features using C#, MySQl, and .NET Core.</li>
                     <li>Built a dynamic, responsive UI using Vue.js and Javascript.</li>
@@ -119,17 +117,21 @@
             </article>
 
             <article>
-                <h3>Titanic Scikit-Learn - ML Project</h3>
-                <strong>March 2025 - June 2025</strong>
+                <div class="project-header">
+                    <h3>Titanic Scikit-Learn - ML Project</h3>
+                    <span class="static-date">March 2025 - June 2025</span>
+                </div>
                 <ul>
                     <li>Built a binary classification model to predict Titanic survival using Python and Scikit-Learn.</li>
                     <li>Preprocessed and visualized passenger data using Pandas, NumPY, and Matplotlib.</li>
-                    <li>Tuned model performance using GridSearchCV and evaluated result with accuracy and confusion matrix metrics</li>
+                    <li>Tuned model performance using GridSearchCV and evaluated result with accuracy and confusion matrix metrics.</li>
                 </ul>
             </article>
             <article>
-                <h3>ECommerce - Web Application</h3>
-                <strong>June 2023 - November 2023</strong>
+                <div class="project-header">
+                    <h3>ECommerce - Web Application</h3>
+                    <span class="static-date">June 2023 - November 2023</span>
+                </div>
                 <ul>
                     <li>Built a server-rendered ecommerce site using Next.js, TypeScript, and TailwindCSS for performance and responsive design.</li>
                     <li>Managed product inventory and content using Sanity.io as a headless CMS with real-time integration.</li>

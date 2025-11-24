@@ -24,12 +24,13 @@ a {
 }
 
 hr {
-    height: 2px;
-    background-color: black;
     border: none;
+    border-top: 2px solid #000;
+    margin: 15px 0;
 }
 
-.date {
+
+#current-date {
     display:list-item;
     font-weight: lighter;
     text-align: end;
@@ -95,14 +96,70 @@ tr {
     padding-bottom: 0;
 }
 
-article > em {
-    display: block;
+.static-date {
     text-align: right;
-    position: relative;
-    z-index: 2;
-    
+    font-style: italic;
 }
 
+.job-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 5px;
+}
+
+.job-header h3 {
+    margin: 5px;
+}
+
+h3 > em {
+    font-weight:normal;
+}
+
+.static-date {
+    font-style: italic;
+    white-space: nowrap;
+    margin-right: 10px;
+}
+
+article ul {
+    margin-top: 8px;
+    margin-bottom: 20px;
+    padding-left: 20px;
+}
+
+article li {
+    margin-bottom: 6px;
+    line-height: 1.4;
+    font-size: 18px;
+}
+
+.project-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 5px;
+}
+
+.skills {
+    margin-bottom: 30px;
+}
+
+.skills p {
+    margin-bottom: 12px;
+    line-height: 1.6;
+    width: 100%;
+    max-width: 100%;
+}
+
+.skills strong {
+    color: #000;
+    font-weight: 700;  
+}
+
+.skills span {
+    color: #333;
+}
 
 
 
