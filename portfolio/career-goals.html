@@ -15,7 +15,7 @@
             <li><em>Boise, Idaho 83709 |&nbsp;</em></li>
             <li><address>julioleon.eng@gmail.com |&nbsp;</address></li>
             <li><address> (208)488-5223 |&nbsp;</address></li>
-            <li><a target="_blank" href="https://www.github.com/juliopleon">Github |&nbsp;</a></li>
+            <li><a target="_blank" href="https://www.github.com/juliopleon">Github&nbsp;</a></li>|&nbsp;
             <li><a target="_blank" href="https://www.linkedin.com/in/juliopleon">LinkedIn</a></li>
         </ul>
         <nav>
@@ -37,70 +37,59 @@
             </div>
         </section>
 
-        <!-- Audio Introduction -->
-        <section class="audio-section">
-            <h2>My Career Philosophy</h2>
-            <div class="audio-container">
-                <audio controls>
-                    <source src="career-philosophy.mp3" type="audio/mpeg">
-                    <source src="career-philosophy.ogg" type="audio/ogg">
-                    Your browser does not support the audio element.
-                </audio>
-                <p class="audio-caption">Listen to my thoughts on professional growth and career development</p>
+        <!-- Goals Grid -->
+        <div class="goals-container">
+        <!-- Short Term Goals -->
+        <section class="goals-section short-term">
+            <h2>Short-Term Goals (1-2 Years)</h2>
+            <div class="goals-grid">
+                <div class="goal-card">
+                    <h3>Technical Mastery</h3>
+                    <p>Deepen expertise in modern frameworks, contribute to open-source projects, and obtain advanced certifications</p>
+                </div>
+                <div class="goal-card">
+                    <h3>Professional Growth</h3>
+                    <p>Take on leadership roles in project teams, improve public speaking skills, and mentor junior developers</p>
+                </div>
+                <div class="goal-card">
+                    <h3>Impact & Contribution</h3>
+                    <p>Deliver measurable results through optimized solutions and innovative approaches to complex problems</p>
+                </div>
             </div>
         </section>
 
-        <!-- Goals Grid -->
-        <div class="goals-container">
-            <!-- Short Term Goals -->
-            <section class="goals-section short-term">
-                <h2>Short-Term Goals (1-2 Years)</h2>
-                <div class="goals-grid">
-                    <div class="goal-card">
-                        <h3>Technical Mastery</h3>
-                        <p>Deepen expertise in modern frameworks, contribute to open-source projects, and obtain advanced certifications</p>
-                    </div>
-                    <div class="goal-card">
-                        <h3>Professional Growth</h3>
-                        <p>Take on leadership roles in project teams, improve public speaking skills, and mentor junior developers</p>
-                    </div>
-                    <div class="goal-card">
-                        <h3>Impact & Contribution</h3>
-                        <p>Deliver measurable results through optimized solutions and innovative approaches to complex problems</p>
-                    </div>
+        <!-- Long Term Goals -->
+        <section class="goals-section long-term">
+            <h2>Long-Term Goals (3-5+ Years)</h2>
+            <div class="goals-grid">
+                <div class="goal-card">
+                    <h3>Technical Leadership</h3>
+                    <p>Progress to Senior Software Engineer/AI Engineer role, architect scalable systems, and drive technical strategy</p>
                 </div>
-            </section>
-
-            <!-- Long Term Goals -->
-            <section class="goals-section long-term">
-                <h2>Long-Term Goals (3-5+ Years)</h2>
-                <div class="goals-grid">
-                    <div class="goal-card">
-                        <h3>Technical Leadership</h3>
-                        <p>Progress to Senior/Lead Developer role, architect scalable systems, and drive technical strategy</p>
-                    </div>
-                    <div class="goal-card">
-                        <h3>Specialization</h3>
-                        <p>Develop deep expertise in emerging technologies and cloud infrastructure design</p>
-                    </div>
-                    <div class="goal-card">
-                        <h3>Industry Contribution</h3>
-                        <p>Speak at tech conferences, publish technical articles, and build a strong professional network</p>
-                    </div>
+                <div class="goal-card">
+                    <h3>Specialization</h3>
+                    <p>Develop deep expertise in emerging technologies and cloud infrastructure design</p>
                 </div>
-            </section>
+                <div class="goal-card">
+                    <h3>Industry Contribution</h3>
+                    <p>Speak at tech conferences, publish technical articles, and build a strong professional network</p>
+                </div>
+            </div>
+        </section>
         </div>
 
         <!-- Video Section -->
         <section class="video-section">
             <h2>Career Journey Overview</h2>
             <div class="video-container">
-                <video controls poster="video-poster.jpg">
-                    <source src="career-journey.mp4" type="video/mp4">
-                    <source src="career-journey.webm" type="video/webm">
-                    Your browser does not support the video tag.
-                </video>
-                <p class="video-caption">A brief overview of my career path and future aspirations</p>
+                <iframe 
+                    src="https://www.youtube.com/embed/w4rG5GY9IlA" 
+                    title="My Career Journey Video"
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+                <p class="video-caption">A brief overview of my career aspirations & mindset</p>
             </div>
         </section>
 
@@ -109,8 +98,9 @@
         <section class="contact-section">
             <h2>Contact Me</h2>
             <form class="contact-form" id="career-contact-form" action="https://wp.zybooks.com/form-viewer.php" method="POST">
+
         <!-- Name Fields -->
-         <div class="form-row">
+        <div class="form-row">
             <div class="form-group required">
                 <label for="first-name">First Name</label>
                 <input type="text" id="first-name" name="first_name" required>
@@ -166,7 +156,7 @@
             </div>
         </div>
 
-        <!-- Preferred Contact Method (Select) -->
+        <!-- Preferred Contact Method -->
         <div class="form-group required">
             <label for="contact-method">Preferred Contact Method</label>
             <select id="contact-method" name="contact_method" required>
@@ -176,13 +166,12 @@
                 <option value="text">Text</option>
             </select>
         </div>
-
         <button type="submit" class="submit-btn">Send Message</button>
     </form>
-</section>
-        <footer>
-            <p>&copy; 2025 Julio Leon. All rights reserved.</p>
-        </footer>
+    </section>
+    <footer>
+        <p>&copy; 2025 Julio Leon. All rights reserved.</p>
+    </footer>
     </main>
 
     
