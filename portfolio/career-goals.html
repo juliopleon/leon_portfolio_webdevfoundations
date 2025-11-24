@@ -9,7 +9,7 @@
 <body>
     <header>
         <h1>Julio Leon</h1>
-        <span>Career Goals</span>
+        <span>Software Engineer</span>
         <!-- <div id="current-date">{date}</div> -->
         <ul>
             <li><em>Boise, Idaho 83709 |&nbsp;</em></li>
@@ -19,7 +19,7 @@
             <li><a target="_blank" href="https://www.linkedin.com/in/juliopleon">LinkedIn</a></li>
         </ul>
         <nav>
-            <ul>
+            <ul class="goals-nav">
                 <li><a href="resume.html">Resume</a> &nbsp;</li>|&nbsp;
                 <li><a href="cover-letter.html">Cover Letter</a> &nbsp;</li>
                 <!-- <li><a href="career-goals.html">Career Goals</a></li> -->
@@ -29,7 +29,7 @@
     <main class="career-goals">
         <section class="goals-hero">
             <div class="hero-content">
-                <img src="profile-image.jpg" alt="Professional Headshot" class="profile-image">
+                <img src="files/julio.leon.JPG" alt="Professional Headshot" class="profile-image">
                 <div class="hero-text">
                     <h1>Career Vision & Aspirations</h1>
                     <p class="subtitle">My professional journey and future objectives</p>
@@ -54,7 +54,7 @@
         <div class="goals-container">
             <!-- Short Term Goals -->
             <section class="goals-section short-term">
-                <h2>🎯 Short-Term Goals (1-2 Years)</h2>
+                <h2>Short-Term Goals (1-2 Years)</h2>
                 <div class="goals-grid">
                     <div class="goal-card">
                         <h3>Technical Mastery</h3>
@@ -73,7 +73,7 @@
 
             <!-- Long Term Goals -->
             <section class="goals-section long-term">
-                <h2>🚀 Long-Term Goals (3-5+ Years)</h2>
+                <h2>Long-Term Goals (3-5+ Years)</h2>
                 <div class="goals-grid">
                     <div class="goal-card">
                         <h3>Technical Leadership</h3>
@@ -104,44 +104,82 @@
             </div>
         </section>
 
+
         <!-- Contact Form -->
         <section class="contact-section">
-            <h2>Let's Connect</h2>
-            <form class="contact-form" id="career-contact-form">
-                <div class="form-group">
-                    <label for="name">Name</label>
-                    <input type="text" id="name" name="name" required>
-                </div>
-                
-                <div class="form-group">
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
-                
-                <div class="form-group">
-                    <label for="company">Company (Optional)</label>
-                    <input type="text" id="company" name="company">
-                </div>
-                
-                <div class="form-group">
-                    <label for="message">Message</label>
-                    <textarea id="message" name="message" rows="5" required></textarea>
-                </div>
-                
-                <div class="form-group">
-                    <label for="interest">I'm interested in:</label>
-                    <select id="interest" name="interest">
-                        <option value="opportunities">Career Opportunities</option>
-                        <option value="collaboration">Technical Collaboration</option>
-                        <option value="mentorship">Mentorship</option>
-                        <option value="networking">Professional Networking</option>
-                        <option value="other">Other</option>
-                    </select>
-                </div>
-                
-                <button type="submit" class="submit-btn">Send Message</button>
-            </form>
-        </section>
+            <h2>Contact Me</h2>
+            <form class="contact-form" id="career-contact-form" action="https://wp.zybooks.com/form-viewer.php" method="POST">
+        <!-- Name Fields -->
+         <div class="form-row">
+            <div class="form-group required">
+                <label for="first-name">First Name</label>
+                <input type="text" id="first-name" name="first_name" required>
+            </div>
+            
+            <div class="form-group required">
+                <label for="last-name">Last Name</label>
+                <input type="text" id="last-name" name="last_name" required>
+            </div>
+        </div>
+
+        <!-- Company -->
+        <div class="form-group">
+            <label for="company-name">Company Name</label>
+            <input type="text" id="company-name" name="company_name">
+        </div>
+
+        <!-- Contact Info -->
+        <div class="form-row">
+            <div class="form-group required">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone">
+            </div>
+        </div>
+
+        <!-- Message -->
+        <div class="form-group required">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required placeholder="Please include details about your inquiry..."></textarea>
+        </div>
+
+        <!-- Best Contact Time (Radio Buttons) -->
+        <div class="form-group required">
+            <label>Best Time to Contact</label>
+            <div class="radio-group">
+                <label class="radio-option">
+                    <input type="radio" name="contact_time" value="am" required>
+                    A.M. (9:00 AM - 12:00 PM)
+                </label>
+                <label class="radio-option">
+                    <input type="radio" name="contact_time" value="pm" required>
+                    P.M. (1:00 PM - 5:00 PM)
+                </label>
+                <label class="radio-option">
+                    <input type="radio" name="contact_time" value="anytime" required>
+                    Anytime
+                </label>
+            </div>
+        </div>
+
+        <!-- Preferred Contact Method (Select) -->
+        <div class="form-group required">
+            <label for="contact-method">Preferred Contact Method</label>
+            <select id="contact-method" name="contact_method" required>
+                <option value="">Please select...</option>
+                <option value="phone">Phone</option>
+                <option value="email">Email</option>
+                <option value="text">Text</option>
+            </select>
+        </div>
+
+        <button type="submit" class="submit-btn">Send Message</button>
+    </form>
+</section>
         <footer>
             <p>&copy; 2025 Julio Leon. All rights reserved.</p>
         </footer>

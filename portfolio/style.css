@@ -173,6 +173,10 @@ article li {
     color: #333;
 }
 
+.goals-nav {
+    margin-bottom: 15px;
+}
+
 .career-goals {
     text-align: center;
     padding: 2rem 1rem 1rem;
@@ -213,7 +217,7 @@ article li {
     color: #7f8c8d;
 }
 
-/* Audio Section */
+
 .audio-section {
     background: white;
     padding: 2rem;
@@ -239,7 +243,7 @@ article li {
     margin-top: 0.5rem;
 }
 
-/* Goals Sections */
+
 .goals-section {
     margin-bottom: 3rem;
 }
@@ -289,7 +293,7 @@ article li {
     border-top-color: #9b59b6;
 }
 
-/* Video Section */
+
 .video-section {
     background: white;
     padding: 2rem;
@@ -320,8 +324,6 @@ video {
     font-size: 0.9rem;
     margin-top: 0.5rem;
 }
-
-/* Contact Form */
 .contact-section {
     background: white;
     padding: 2rem;
@@ -351,6 +353,12 @@ video {
     font-weight: 500;
 }
 
+/* Required field labels */
+.form-group.required label::after {
+    content: ' *';
+    color: #e74c3c;
+}
+
 .form-group input,
 .form-group select,
 .form-group textarea {
@@ -360,6 +368,7 @@ video {
     border-radius: 6px;
     font-size: 1rem;
     transition: border-color 0.3s ease;
+    font-family: inherit;
 }
 
 .form-group input:focus,
@@ -379,10 +388,72 @@ video {
     cursor: pointer;
     transition: background-color 0.3s ease;
     width: 100%;
+    font-weight: 600;
 }
 
 .submit-btn:hover {
     background: #2980b9;
+}
+
+/* Form Row Layout */
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+@media (max-width: 768px) {
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Radio Button Styles - Simplified */
+.radio-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    margin-top: 0.5rem;
+}
+
+.radio-option {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    cursor: pointer;
+    padding: 0.5rem;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+}
+
+.radio-option:hover {
+    background-color: #f8f9fa;
+}
+
+/* Show the default radio buttons but style them */
+.radio-option input[type="radio"] {
+    margin: 0;
+    width: 16px;
+    height: 16px;
+    accent-color: #3498db; /* Modern browser support */
+}
+
+/* Fallback for older browsers */
+.radio-option input[type="radio"] {
+    transform: scale(1.2);
+    margin-right: 0.5rem;
+}
+
+/* Select Dropdown Styles */
+.form-group select {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' fill='%23333' viewBox='0 0 16 16'%3E%3Cpath d='M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 12px center;
+    background-size: 12px;
+    padding-right: 40px;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
 }
 
 
