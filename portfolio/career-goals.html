@@ -3,20 +3,151 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Career Goals</title>
 </head>
 <body>
     <header>
-
+        <h1>Julio Leon</h1>
+        <span>Career Goals</span>
+        <!-- <div id="current-date">{date}</div> -->
+        <ul>
+            <li><em>Boise, Idaho 83709 |&nbsp;</em></li>
+            <li><address>julioleon.eng@gmail.com |&nbsp;</address></li>
+            <li><address> (208)488-5223 |&nbsp;</address></li>
+            <li><a target="_blank" href="https://www.github.com/juliopleon">Github |&nbsp;</a></li>
+            <li><a target="_blank" href="https://www.linkedin.com/in/juliopleon">LinkedIn</a></li>
+        </ul>
+        <nav>
+            <ul>
+                <li><a href="resume.html">Resume</a> &nbsp;</li>|&nbsp;
+                <li><a href="cover-letter.html">Cover Letter</a> &nbsp;</li>
+                <!-- <li><a href="career-goals.html">Career Goals</a></li> -->
+            </ul>
+        </nav>
     </header>
+    <main class="career-goals">
+        <section class="goals-hero">
+            <div class="hero-content">
+                <img src="profile-image.jpg" alt="Professional Headshot" class="profile-image">
+                <div class="hero-text">
+                    <h1>Career Vision & Aspirations</h1>
+                    <p class="subtitle">My professional journey and future objectives</p>
+                </div>
+            </div>
+        </section>
 
-    <main>
+        <!-- Audio Introduction -->
+        <section class="audio-section">
+            <h2>My Career Philosophy</h2>
+            <div class="audio-container">
+                <audio controls>
+                    <source src="career-philosophy.mp3" type="audio/mpeg">
+                    <source src="career-philosophy.ogg" type="audio/ogg">
+                    Your browser does not support the audio element.
+                </audio>
+                <p class="audio-caption">Listen to my thoughts on professional growth and career development</p>
+            </div>
+        </section>
 
+        <!-- Goals Grid -->
+        <div class="goals-container">
+            <!-- Short Term Goals -->
+            <section class="goals-section short-term">
+                <h2>🎯 Short-Term Goals (1-2 Years)</h2>
+                <div class="goals-grid">
+                    <div class="goal-card">
+                        <h3>Technical Mastery</h3>
+                        <p>Deepen expertise in modern frameworks, contribute to open-source projects, and obtain advanced certifications</p>
+                    </div>
+                    <div class="goal-card">
+                        <h3>Professional Growth</h3>
+                        <p>Take on leadership roles in project teams, improve public speaking skills, and mentor junior developers</p>
+                    </div>
+                    <div class="goal-card">
+                        <h3>Impact & Contribution</h3>
+                        <p>Deliver measurable results through optimized solutions and innovative approaches to complex problems</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Long Term Goals -->
+            <section class="goals-section long-term">
+                <h2>🚀 Long-Term Goals (3-5+ Years)</h2>
+                <div class="goals-grid">
+                    <div class="goal-card">
+                        <h3>Technical Leadership</h3>
+                        <p>Progress to Senior/Lead Developer role, architect scalable systems, and drive technical strategy</p>
+                    </div>
+                    <div class="goal-card">
+                        <h3>Specialization</h3>
+                        <p>Develop deep expertise in emerging technologies and cloud infrastructure design</p>
+                    </div>
+                    <div class="goal-card">
+                        <h3>Industry Contribution</h3>
+                        <p>Speak at tech conferences, publish technical articles, and build a strong professional network</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Video Section -->
+        <section class="video-section">
+            <h2>Career Journey Overview</h2>
+            <div class="video-container">
+                <video controls poster="video-poster.jpg">
+                    <source src="career-journey.mp4" type="video/mp4">
+                    <source src="career-journey.webm" type="video/webm">
+                    Your browser does not support the video tag.
+                </video>
+                <p class="video-caption">A brief overview of my career path and future aspirations</p>
+            </div>
+        </section>
+
+        <!-- Contact Form -->
+        <section class="contact-section">
+            <h2>Let's Connect</h2>
+            <form class="contact-form" id="career-contact-form">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="company">Company (Optional)</label>
+                    <input type="text" id="company" name="company">
+                </div>
+                
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                
+                <div class="form-group">
+                    <label for="interest">I'm interested in:</label>
+                    <select id="interest" name="interest">
+                        <option value="opportunities">Career Opportunities</option>
+                        <option value="collaboration">Technical Collaboration</option>
+                        <option value="mentorship">Mentorship</option>
+                        <option value="networking">Professional Networking</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+        </section>
+        <footer>
+            <p>&copy; 2025 Julio Leon. All rights reserved.</p>
+        </footer>
     </main>
 
-    <footer>
-        
-    </footer>
+    
     
 </body>
 </html>
