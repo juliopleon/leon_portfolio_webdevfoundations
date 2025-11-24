@@ -8,11 +8,9 @@
 </head>
 <body>
     <header>
-        <script>const today = new Date()</script>
-        <script>const dateString = today.toLocaleDateString()</script>
         <h1>Julio Leon</h1>
         <span>Software Engineer</span>
-        <div id="current-date" getElementById="" innerHTML="">${date}</div>
+        <div id="current-date">{date}</div>
         <ul>
             <li><em>Boise, Idaho 83709 |&nbsp;</em></li>
             <li><address>julioleon.eng@gmail.com |&nbsp;</address></li>
@@ -158,5 +156,14 @@
             <p>&copy; 2025 Julio Leon. All rights reserved.</p>
         </footer>
     </main>
+
+    <script>
+    const today = new Date()
+    const dateString = today.toLocaleDateString()
+    const dateDiv = document.getElementById('current-date')
+    dateDiv.textContent = dateString
+    console.log('Successfully Rendered Resume')
+    
+    </script>
 </body>
 </html>
